@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "Electron Main",
+            "program": "${workspaceFolder}/main.js",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": ""
+        },
+        {
+            "name": "Launch Microsoft Edge and open the Edge DevTools",
+            "request": "launch",
+            "type": "vscode-edge-devtools.debug",
+            "url": "" // Provide your project's url to finish configuring
+        }
+    ]
+}
